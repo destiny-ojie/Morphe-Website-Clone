@@ -1,0 +1,46 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 280px) and (max-width: 374px) {
+  .logo{
+
+      @apply text-sm;
+  }
+  .nav-links{
+    @apply text-sm;
+  }
+}
+.drop li{
+  position: relative;
+  cursor: pointer;
+}
+
+
+.drop li:hover::after{
+position: absolute;
+content: '';
+color: aliceblue;
+width: auto;
+height: 3px;
+bottom: -25.5px;
+left: 1px ;
+right: 1px;
+background-color: black;
+ }
+.DesktopDropDown {
+transform: translateY(-100%);
+transition: all linear 500ms;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .desktop{
+    display: none;
+  }
+}
+

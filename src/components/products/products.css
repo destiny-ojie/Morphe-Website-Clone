@@ -1,0 +1,38 @@
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    .scroll::-webkit-scrollbar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 2px;
+      height: 5px;
+     
+     
+    }
+    .scroll::-webkit-scrollbar-track{
+      background-color: transparent;
+      border-bottom: 1px;
+      border-color: #74767c;
+      border-style: solid;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      margin: 50%;
+    }
+    .scroll::-webkit-scrollbar-thumb{
+     background-color: #74767c;
+    }
+    .scroll::-webkit-scrollbar-button:end:increment{
+      width: 10%;
+      display: block;
+      background: transparent;
+    }
+    .scroll::-webkit-scrollbar-button:start:increment{
+      width: 10%;
+      display: block;
+      background: transparent;
+    }
+  }
+  .card{
+    flex-basis: 100%;
+}
